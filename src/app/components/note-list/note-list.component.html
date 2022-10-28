@@ -1,1 +1,7 @@
-<p>note-list works!</p>
+
+    <app-button1 color="green" text="Adicionar" routerLink="/addNote"></app-button1>
+    <app-note
+    *ngFor="let note of notes"
+    [note]="note">
+
+    </app-note>

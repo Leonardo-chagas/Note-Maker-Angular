@@ -13,13 +13,15 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  Adicionar(){
-    this.router.navigate(['/addNote'], {relativeTo: this.route});
+  /* Adicionar(){
+    //this.router.navigate(['/addNote'], {relativeTo: this.route});
+    this.router.navigateByUrl('/addNote', {skipLocationChange:true});
   }
 
   Voltar(){
-    this.router.navigate(['/'], {relativeTo: this.route});
-  }
+    //this.router.navigate(['/'], {relativeTo: this.route});
+    this.router.navigateByUrl('/', {skipLocationChange:true});
+  } */
 
   HasRoute(route: string){
     return this.router.url === route;
