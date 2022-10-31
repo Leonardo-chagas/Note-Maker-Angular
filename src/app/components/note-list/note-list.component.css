@@ -1,0 +1,7 @@
+.list {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+}
