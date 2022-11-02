@@ -1,8 +1,6 @@
 <app-button1 color="red" text="Voltar" routerLink="/"></app-button1>
-<form>
-    <div class="form-container">
-        <input type="text" name="" id="" placeholder="Digite o título da nota">
-        <input type="text" name="" id="" placeholder="Digite o conteúdo da nota">
-    </div>
+<form class="form-container">
+    <input type="text" name="title" [(ngModel)="title" id="title" placeholder="Digite o título da nota">
+    <textarea name="text" [(ngModel)="text" id="text" placeholder="Digite o conteúdo da nota"></textarea>
     <input type="submit">
 </form>

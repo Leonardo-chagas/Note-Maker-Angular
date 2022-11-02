@@ -1,0 +1,17 @@
+.form-container {
+align-items: center;
+justify-items: center;
+display: grid;
+grid-template-rows: repeat(3, 1fr);
+
+}
+
+#title {
+width: 600px;
+}
+
+#text {
+width: 600px;
+height: 150px;
+vertical-align: top;
+}
